@@ -11,10 +11,10 @@ A Cisco Packet Tracer lab on a smart home IoT network, part of my preparation fo
 - Smart devices: fan, lamp, door, garage door, smoke detector, temperature monitor, coffee maker, solar panel, and battery
 
 ## What I Did
-[Write 2-3 sentences in your own words: did you build this topology yourself, or modify an existing Packet Tracer example? What did you set up or change?]
+I followed a hands-on training session on smart home IoT networking in Cisco Packet Tracer. In this lab I connected the devices to the network and wrote a looping program for the MCU to control the smart devices.
 
 ## What I Learned
-[Write 2-3 sentences: for example, how IoT devices connect to the Home Gateway, or how the MCU works.]
+I learned how IoT devices connect to the Home Gateway and how a simple loop makes the MCU keep checking and controlling devices. One challenge was forgetting the tablet password, which taught me to document login credentials for lab devices.
 
 ## Files
 - [LABS.01.pkt](LABS.01.pkt): Packet Tracer file
