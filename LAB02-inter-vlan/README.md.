@@ -1,0 +1,24 @@
+# LAB02 - Inter-VLAN Routing (Router-on-a-Stick)
+
+A Cisco Packet Tracer lab on inter-VLAN routing using a single trunk link between a switch and a router, part of my preparation for the CCNA 200-301.
+
+## Topology
+![LAB02 topology](topology.png)
+
+## VLANs and Addressing
+- VLAN 10 (HR): 192.168.10.0/24, gateway 192.168.10.1
+- VLAN 20 (FINANCE): 172.16.0.0/16, gateway 172.16.0.1
+- VLAN 30 (IT): 10.0.0.0/28, gateway 10.0.0.1
+- VLAN 40 (PRODUKSI): 192.168.40.0/24, gateway 192.168.40.1
+
+## What I Did
+The topology and addressing plan were provided by my class leader as a template. I configured the VLANs, access ports, and the trunk on the switch, set the static IP addresses on the PCs, and verified the router subinterfaces. [Hapus kalimat ini kalau tidak sesuai: The router subinterfaces were already present in the provided file.]
+
+## Verification
+`show vlan brief` and `show interfaces trunk` on the switch confirmed all four VLANs and the trunk on Fa0/5. Ping from PC0 (VLAN 10) to PCs in the other VLANs succeeded through the router.
+
+## What I Learned
+[Tulis 1-2 kalimat dengan bahasamu, misalnya: why devices in different VLANs need a router to communicate, and how subinterfaces with dot1Q encapsulation share one physical link.]
+
+## Files
+- [LAB02-inter-vlan.pkt](LAB02-inter-vlan.pkt): Packet Tracer file
